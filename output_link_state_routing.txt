@@ -1,0 +1,165 @@
+######################################################
+
+CN 317 Link State Routing Simulator
+
+(1) Input Network Topology File
+(2) Build a Connection Table
+(3) Shortest Path to Destination Router
+(4) Exit
+
+######################################################
+
+
+
+Command : 1
+
+
+Input original network topology matrix data file[ NxN distance matrix. (value : -1 for no link, 0 for self loop) : input_link_state_routing.txt
+
+Review original topology matrix:
+
+0 2 5 1 -1  
+2 0 8 7 9  
+5 8 0 -1 4  
+1 7 -1 0 2  
+-1 9 4 2 0  
+Creating Routing Tables ... 
+--------------------
+1 {2: 2, 3: 5, 4: 1}
+---------------------
+--------------------
+1 {2: 2, 3: 5, 4: 1}
+2 {1: 2, 3: 8, 4: 7, 5: 9}
+---------------------
+--------------------
+1 {2: 2, 3: 5, 4: 1}
+2 {1: 2, 3: 8, 4: 7, 5: 9}
+3 {1: 5, 2: 8, 5: 4}
+---------------------
+--------------------
+1 {2: 2, 3: 5, 4: 1}
+2 {1: 2, 3: 8, 4: 7, 5: 9}
+3 {1: 5, 2: 8, 5: 4}
+4 {1: 1, 2: 7, 5: 2}
+---------------------
+--------------------
+1 {2: 2, 3: 5, 4: 1}
+2 {1: 2, 3: 8, 4: 7, 5: 9}
+3 {1: 5, 2: 8, 5: 4}
+4 {1: 1, 2: 7, 5: 2}
+5 {2: 9, 3: 4, 4: 2}
+---------------------
+######################################################
+
+CN 317 Link State Routing Simulator
+
+(1) Input Network Topology File
+(2) Build a Connection Table
+(3) Shortest Path to Destination Router
+(4) Exit
+
+######################################################
+
+
+
+Command : 2
+Building the Router Table for Router: 1
+---------------------------------
+Routing Table For: 1
+
+Destination     Interface
+1                None
+2                2
+3                3
+4                4
+5                4
+---------------------------------
+Building the Router Table for Router: 2
+---------------------------------
+Routing Table For: 2
+
+Destination     Interface
+1                1
+2                None
+3                1
+4                1
+5                1
+---------------------------------
+Building the Router Table for Router: 3
+---------------------------------
+Routing Table For: 3
+
+Destination     Interface
+1                1
+2                1
+3                None
+4                5
+5                5
+---------------------------------
+Building the Router Table for Router: 4
+---------------------------------
+Routing Table For: 4
+
+Destination     Interface
+1                1
+2                1
+3                1
+4                None
+5                5
+---------------------------------
+Building the Router Table for Router: 5
+---------------------------------
+Routing Table For: 5
+
+Destination     Interface
+1                4
+2                4
+3                3
+4                4
+5                None
+---------------------------------
+######################################################
+
+CN 317 Link State Routing Simulator
+
+(1) Input Network Topology File
+(2) Build a Connection Table
+(3) Shortest Path to Destination Router
+(4) Exit
+
+######################################################
+
+
+
+Command : 3
+
+
+Select Start Router:1
+
+
+Select a destination router : 5
+Building the Router Table for Router: 1
+
+The shortest path from router 1 to router 5 : 
+1  
+4  
+5  
+
+
+The total cost is :  3
+######################################################
+
+CN 317 Link State Routing Simulator
+
+(1) Input Network Topology File
+(2) Build a Connection Table
+(3) Shortest Path to Destination Router
+(4) Exit
+
+######################################################
+
+
+
+Command : 4
+
+ Simulation END....
