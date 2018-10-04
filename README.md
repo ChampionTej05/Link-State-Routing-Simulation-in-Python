@@ -10,5 +10,5 @@ This is the simple demonstration of LSP algorithm in networking, which is dynami
 ## This Project was developed under the reference of CS542 course of Illinois Institute of Technology. 
 https://science.iit.edu/courses/cs542
 
-# Refrences were taken from Vivek Pabani, IIT. Credits to him for the core implementation.
+### Refrences were taken from Vivek Pabani, IIT. Credits to him for the core implementation.
 
